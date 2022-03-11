@@ -225,7 +225,7 @@ function show_new_game_message()
 
   } else if (client.conn.playing != null && !game_loaded) {
     var pplayer = client.conn.playing;
-    var player_nation_text = "Welcome, " + username + " ruler of the " + nations[pplayer['nation']]['adjective'] + " empire.";
+    var player_nation_text = "Willkommen, " + username + " Herrscher des " + nations[pplayer['nation']]['adjective'] + " Reichs.";
 
     if (is_touch_device()) {
       message = player_nation_text + " Your\n" +
@@ -238,13 +238,13 @@ function show_new_game_message()
       "Good luck, and have a lot of fun!";
 
     } else {
-      message = player_nation_text + " Your\n" +
-      "task is to create a great empire! You should start by\n" +
-      "exploring the land around you with your explorer,\n" +
-      "and using your settlers to find a good place to build\n" +
-      "a city. Right-click with the mouse on your units for a list of available \n" +
-      "orders such as move, explore, build cities and attack. \n" +
-      "Good luck, and have a lot of fun!";
+      message = player_nation_text + " Deine\n" +
+      "Aufgabe ist es, ein großartiges Reich zu schaffen! Du \n" +
+      "solltest zünachst mit dem Entdecker das Umland erkunden,\n" +
+      "und mti deinen Siedelern einen guten Platz für eine Stadt\n" +
+      "finden. Rechts-klicke mit der Maus auf deine Einheiten um eine Liste mit\n" +
+      "möglichen Aufträgen wie bewegen, erkunden, Städte bauen und angreifen anzuzeigen. \n" +
+      "Viel Erfolg,und hab eine Menge Spaß!";
 
     }
   } else if (game_loaded) {

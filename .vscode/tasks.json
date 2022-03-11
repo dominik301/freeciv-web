@@ -15,6 +15,11 @@
             "label": "Start Server",
             "type": "shell",
             "command": "./scripts/start-freeciv-web.sh"
+        },
+        {
+            "label": "Stop Server",
+            "type": "shell",
+            "command": "./scripts/stop-freeciv-web.sh"
         }
     ]
 }

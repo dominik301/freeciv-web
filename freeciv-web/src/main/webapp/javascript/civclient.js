@@ -281,12 +281,12 @@ function init_common_intro_dialog() {
     network_init_manual_hack(hack_port, hack_username,
                              $.getUrlVar("savegame"));
   } else {
-    show_intro_dialog("Welcome to Freeciv-web",
-      "You are about to join this game server, where you can " +
-      "play a singleplayer game against the Freeciv AI. You can " +
-      "start the game directly by entering any name, or customize the game settings. " +
-      "Creating a user account is optional, but savegame support requires that you create a user account. (<a class='pwd_reset' href='#' style='color: #555555;'>Forgot password?</a>) Have fun! <br>" +
-      "Please enter your name: ");
+    show_intro_dialog("Willkommen zu Freeciv-web",
+      "Du bist dabei den Spielserver zu betreten, auf dem du " +
+      "ein Einzelspieler Spiel gegen die Freeciv KI spielen kannst. Du kannst " +
+      "das Spiel dirket starten indem du einen beliebigen Namen eingibst, oder die Spiel-Einstellungen anpassen. " +
+      "Ein Nutzer-Account ist optional, wir aber ben&ouml;tigt, um Spielst&auml;nde zu speichern. (<a class='pwd_reset' href='#' style='color: #555555;'>Passwort vergessen?</a>) Hab Spa&szlig;! <br>" +
+      "Gib deinen Namen ein: ");
       $(".pwd_reset").click(forgot_pbem_password);
   }
 }

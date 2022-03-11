@@ -290,17 +290,13 @@ function pick_nation(player_id)
                + "<div id='nation_legend'></div><div id='select_nation_flag'></div>";
 
   $("#pick_nation_dialog").html(nations_html);
-  $("#pick_nation_dialog").attr("title", "What Nation Will " + pplayer['name'] + " Be Ruler Of?");
+  $("#pick_nation_dialog").attr("title", pplayer['name'] + " wird Herrscher welcher Nation?");
   $("#pick_nation_dialog").dialog({
 			bgiframe: true,
 			modal: true,
 			width: is_small_screen() ? "99%" : "70%",
             height: $(window).height() - 100,
 			buttons: {
-			    "Customize this nation": function() {
-                   show_customize_nation_dialog(player_id);
-            	}
-            				,
 				"Play this nation!": function() {
 					$("#pick_nation_dialog").dialog('close');
 					submit_nation_choice();
@@ -1046,11 +1042,11 @@ function show_intro_dialog(title, message) {
   }
   var join_game_customize_text = "";
   if ($.getUrlVar('action') == "load") {
-    join_game_customize_text = "Load games";
+    join_game_customize_text = "Spiele laden";
   } else if ($.getUrlVar('action') == "multi") {
-    join_game_customize_text = "Join Game";
+    join_game_customize_text = "Spiel beitreten";
   } else {
-    join_game_customize_text = "Customize Game";
+    join_game_customize_text = "Spiel anpassen";
   }
 
   $("#dialog").attr("title", title);
@@ -1073,7 +1069,7 @@ function show_intro_dialog(title, message) {
 			buttons:
 			[
 			  {
-				  text : "Start Game",
+				  text : "Spiel starten",
 				  click : function() {
                      if (is_touch_device() || is_small_screen()) {
                        BigScreen.toggle();
@@ -1137,7 +1133,7 @@ function show_intro_dialog(title, message) {
 
   if ($.getUrlVar('action') == "observe") {
     $(".ui-dialog-buttonset button").first().remove();
-    $(".ui-dialog-buttonset button").first().button("option", "label", "Observe Game");
+    $(".ui-dialog-buttonset button").first().button("option", "label", "Spiel beobachten");
   }
 
   blur_input_on_touchdevice();

@@ -1,9 +1,9 @@
-<h1>The Freeciv Online Manual</h1>
+<h1>Freeciv Online-Handbuch</h1>
 <img src='/static/images/frontpage-jumbotron.png' style="max-width: 40%;"><br><br>
 
-Freeciv is a Free and Open Source empire-building strategy game inspired by the 
-history of human civilization. The game commences in prehistory and your mission  
-is to lead your tribe from the Stone Age to the Space Age...<br><br>
+Freeciv ist ein freies und quelloffenes Strategiespiel zum Aufbau von Imperien,
+inspiriert von der Geschichte der menschlichen Zivilisation. Das Spiel begint in der
+Frühzeit and deine Mission ist es, deinen Stamm von der Steinzeit ins Weltraumzeitalter zu führen...<br><br>
 Freeciv-web is the HTML5 web-browser version of <a href="http://www.freeciv.org" target="_new">Freeciv</a>. 
 Freeciv-web is free and open source software, released under the <a href="https://www.gnu.org/licenses/agpl-3.0.html" target='_new'>
 GNU Affero General Public License</a>. The Freeciv C server is released under the 

@@ -4,10 +4,10 @@
 <div style="text-align: center;">
 <center>
 
-<h2>Game Options</h2>
+<h2>Einstellungen</h2>
 
 <div class="main_menu_buttons">
-<b>Music:</b><br>
+<b>Musik:</b><br>
   <audio preload="none"></audio>
 </div>
 
@@ -23,10 +23,10 @@
 </tr>
 <tr>
   <td>
-    <button id="replay_button" type="button" class="button setting_button" onClick="show_replay();">Show game replay</button>
+    <button id="replay_button" type="button" class="button setting_button" onClick="show_replay();">Spielwiederholung anzeigen</button>
   </td>
   <td>
-    Show game replay
+    Spielwiederholung anzeigen
   </td>
 </tr>
 </table>
@@ -35,7 +35,7 @@
 
 
 <div class="main_menu_buttons" id="timeout_setting_div">
-  <b>Timeout (seconds per turn):</b> <input type='number' name='timeout_setting' id='timeout_setting' size='6' length='3' max='3600' step='1'>
+  <b>Timeout (Sekunden pro Zug):</b> <input type='number' name='timeout_setting' id='timeout_setting' size='6' length='3' max='3600' step='1'>
   <span id="timeout_info"></span>
 </div>
 
@@ -44,7 +44,7 @@
 <tr>
 <td>
   <div class="main_menu_buttons">
-    <b>Play sounds:</b> <input type='checkbox' name='play_sounds_setting' id='play_sounds_setting' checked>
+    <b>Sounds abspielen:</b> <input type='checkbox' name='play_sounds_setting' id='play_sounds_setting' checked>
   </div>
 </td>
 <td>
@@ -57,24 +57,24 @@
 <tr>
 <td>
 <div class="main_menu_buttons">
-  <button id="save_button" type="button" class="button setting_button" onClick="save_game();" title="Saves your current game so you can continue later. Press Ctrl+S to quick save the game.">Save Game (Ctrl+S)</button>
+  <button id="save_button" type="button" class="button setting_button" onClick="save_game();" title="Speichert das Spiel, so dass du es später fortsetzen kannst. Drücke Strg+S um das Spiel schnell zu speichern.">Spiel speichern (Ctrl+S)</button>
 </div>
 </td>
 <td>
 <div class="main_menu_buttons">
-  <button id="fullscreen_button" type="button" class="button setting_button" onClick="show_fullscreen_window();" title="Enables fullscreen window mode" >Fullscreen</button>
+  <button id="fullscreen_button" type="button" class="button setting_button" onClick="show_fullscreen_window();" title="Vollbildschirm-Modus einschalten" >Vollbildschirm</button>
 </div>
 </td>
 </tr>
 <tr>
 <td>
 <div class="main_menu_buttons">
-  <button id="surrender_button" type="button" class="button setting_button" onClick="surrender_game();" title="Surrenders in multiplayer games and thus ends the game for you.">Surrender Game</button>
+  <button id="surrender_button" type="button" class="button setting_button" onClick="surrender_game();" title="in Mehrspieler Spiel aufgeben (beendet das Spiel für dich).">Spiel aufgeben</button>
 </div>
 </td>
 <td>
 <div class="main_menu_buttons">
-  <button id="end_button" type="button" class="button setting_button" onClick="window.location='/';" title="Ends the game, and returns to the main page of Freeciv-web." >End Game</button>
+  <button id="end_button" type="button" class="button setting_button" onClick="window.location='/';" title="Beende das SPiel, und kehre zum Hauptbildschirm zurück." >Spiel beenden</button>
 </div>
 </td>
 </tr>
@@ -82,7 +82,7 @@
 
 
 <div class="main_menu_buttons" id="title_setting_div">
-  <b>Game title:</b> <input type='text' name='metamessage_setting' id='metamessage_setting' size='28' maxlength='42'>
+  <b>Spiel Titel:</b> <input type='text' name='metamessage_setting' id='metamessage_setting' size='28' maxlength='42'>
 </div>
 
 

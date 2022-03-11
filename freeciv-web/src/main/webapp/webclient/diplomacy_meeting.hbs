@@ -15,7 +15,7 @@
   <div class='agree_{{box}}' id='agree_{{box}}_{{counterpart.pid}}'></div>
   <h3>{{player.adjective}} {{player.name}}</h3>
   <div class='dipl_div' >
-    <div id='hierarchy_{{box}}_{{counterpart.pid}}'><a tabindex='0' class='menu-button-activator ui-button ui-widget ui-state-default ui-corner-all'><span class='ui-icon ui-icon-triangle-1-s'></span>Add Clause...</a>
+    <div id='hierarchy_{{box}}_{{counterpart.pid}}'><a tabindex='0' class='menu-button-activator ui-button ui-widget ui-state-default ui-corner-all'><span class='ui-icon ui-icon-triangle-1-s'></span>Klausel hinzufügen...</a>
       <ul class='dipl_add'>{{#each player.clauses}}
         {{#if this.title}}
           <li><div>{{this.title}}</div>
@@ -35,7 +35,7 @@
 
 <div id='diplomacy_dialog_{{counterpart.pid}}'>
   <div>
-    Treaty clauses:<br>
+    Vertragsklauseln:<br>
     <div class='diplomacy_messages' id='diplomacy_messages_{{counterpart.pid}}'></div>
     {{> diplomacy_player_box box="self" player=self}}
     {{> diplomacy_player_box box="counterpart" player=counterpart}}

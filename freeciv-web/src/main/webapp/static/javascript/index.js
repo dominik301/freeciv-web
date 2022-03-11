@@ -53,3 +53,9 @@ $(document).ready(function () {
 	
 	})($)
 });
+
+if ('serviceWorker' in navigator) {
+	navigator.serviceWorker
+		.register('/static/javascript/sw.js')
+		.then(() => {console.log('Service Worker Registered'); });
+}

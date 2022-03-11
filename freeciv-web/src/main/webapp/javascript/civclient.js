@@ -232,10 +232,10 @@ function init_common_intro_dialog() {
       "Please enter your name: ");
 
   } else if ($.getUrlVar('action') == "load") {
-    show_intro_dialog("Welcome to Freeciv-web",
-      "You are about to join this game server, where you can " +
-      "load a savegame, tutorial, custom map generated from an image or a historical scenario map. " +
-      "Please enter your name: ");
+    show_intro_dialog("Willkommen zu Freeciv-web",
+      "Du bist dabei den Spielserver zu betreten, auf dem du " +
+      "ein gespeichertes Spiel, ein Tutorial, eine benutzerdefinierte Karte aus einer Bilddatei oder eine historische Karte laden kannst. " +
+      "Bitte gib deinen Namen ein: ");
 
   } else if ($.getUrlVar('action') == "multi") {
 
@@ -416,11 +416,11 @@ function update_turn_change_timer()
   turn_change_elapsed += 1;
   if (turn_change_elapsed < last_turn_change_time) {
     setTimeout(update_turn_change_timer, 1000);
-    $("#turn_done_button").button("option", "label", "Please wait (" 
+    $("#turn_done_button").button("option", "label", "Bitte warten (" 
         + (last_turn_change_time - turn_change_elapsed) + ")");
   } else {
     turn_change_elapsed = 0;
-    $("#turn_done_button").button("option", "label", "Turn Done"); 
+    $("#turn_done_button").button("option", "label", "Zug beenden"); 
   }
 }
 
@@ -473,7 +473,7 @@ function show_fullscreen_window()
   if (BigScreen.enabled) {
     BigScreen.toggle();
   } else {
-   show_dialog_message('Fullscreen', 'Press F11 for fullscreen mode.');
+   show_dialog_message('Fullscreen', 'Drücke F11 für Vollbildmodus.');
   }
 
 }

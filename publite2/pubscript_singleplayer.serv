@@ -1,7 +1,7 @@
 /mapimg define 'zoom=2:map=tcub:turns=5:format=png'
 cmdlevel ctrl first
 set topology WRAPX
-set nationset all
+set nationset core
 set compresstype xz
 set maxplayers 32
 set allowtake H1Ah1adOo

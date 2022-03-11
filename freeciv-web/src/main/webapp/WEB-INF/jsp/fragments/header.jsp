@@ -17,45 +17,31 @@
 		<!-- Collect the nav links, forms, and other panel-freeciv for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav">
-			<li><a href="/webclient/?action=new&amp;type=singleplayer">New Game</a></li>
+			<li><a href="/webclient/?action=new&amp;type=singleplayer">Neues Spiel</a></li>
 			<li class="dropdown">
 				<a href="/game/list?v=singleplayer" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-					<span onclick="window.location='/game/list?v=singleplayer'">Online Games</span> <span class="caret"></span> <span class="badge ongoing-games-number" id="ongoing-games" title="Ongoing games"></span>
+					<span onclick="window.location='/game/list?v=singleplayer'">Online Spiele</span> <span class="caret"></span> <span class="badge ongoing-games-number" id="ongoing-games" title="Ongoing games"></span>
 				</a>
 				<ul class="dropdown-menu">
-					<li><a href="/game/list?v=singleplayer">Single-player</a></li>
+					<li><a href="/game/list?v=singleplayer">Einzelspieler</a></li>
 					<li role="separator" class="divider"></li>
-					<li><a href="/game/list?v=multiplayer">Multiplayer</a></li>
-					<li role="separator" class="divider"></li>
+					<li><a href="/game/list?v=multiplayer">Mehrspieler</a></li>
+					<!--<li role="separator" class="divider"></li>
 					<li><a href="/game/list?v=multiplayer">One Turn per Day</a></li>
 					<li role="separator" class="divider"></li>
-					<li><a href="/game/list?v=play-by-email">Play by Email</a></li>
+					<li><a href="/game/list?v=play-by-email">Play by Email</a></li>-->
 				</ul>
 			</li>
 			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-					<span onclick="window.location='http://forum.freegamedev.net/viewforum.php?f=97'">Forums</span> <span class="caret"></span>
-				</a>
-				<ul class="dropdown-menu">
-					<li><a href="http://forum.freegamedev.net/viewforum.php?f=97">Freeciv-web <fmt:message key="nav-forum"/></a></li>
-					<li role="separator" class="divider"></li>
-					<li><a href="https://www.reddit.com/r/freeciv">reddit.com/freeciv</a></li>
-				</ul>
-			</li>
-			<li><a href="http://www.freeciv.org/donate.html"><fmt:message key="nav-donate"/></a></li>
-			<li><a href="https://github.com/freeciv/freeciv-web">Contribute</a></li>
-			<%--<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="${pageContext.request.locale.language} ${pageContext.request.locale.country}">
-					Language <span class="caret"></span>
+					Sprache <span class="caret"></span>
 				</a>
 				<ul class="dropdown-menu">
 					<li><a href="/?locale=en_US">English</a></li>
 					<li role="separator" class="divider"></li>
-					<li><a href="/?locale=zh_CN">Simplified Chinese</a></li>
-					<li role="separator" class="divider"></li>
-					<li><a href="/?locale=zh_TW">Traditional Chinese</a></li>
+					<li><a href="/?locale=de_DE">Deutsch</a></li>
 				</ul>
-			</li>--%>
+			</li>
 		</ul>
 		<form class="navbar-form navbar-right hidden-sm hidden-md" action="https://duckduckgo.com/" style="width: 220px;">
 			<input type="hidden" name="sites" value="www.freeciv.org,forum.freeciv.org,freeciv.wikia.com">

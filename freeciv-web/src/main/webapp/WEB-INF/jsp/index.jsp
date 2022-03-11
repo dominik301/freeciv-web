@@ -115,11 +115,6 @@
 		<%@include file="/WEB-INF/jsp/fragments/header.jsp"%>
 
 		<div class="jumbotron">
-			<div class="row">
-
-				<img src="/static/images/freeciv-webgl-splash-48.png" alt="" style="width: 95%;">
-
-			</div>
 			<div class="container-fluid">
 				<div class="row top-buffer-3">
 					<p class="lead">
@@ -172,7 +167,7 @@
 							</div>
 						</c:if>
 						<a href="/game/list?v=multiplayer" class="btn"><i class="fa fa-users"></i> <fmt:message key="index-game-launcher-multiplayer"/></a>
-						<c:if test="${default_lang}">
+						<!--<c:if test="${default_lang}">
 							<div class="features">
 								Start a play-by-email game where you get an e-mail <br> when it is your turn to play.
 							</div>
@@ -189,7 +184,7 @@
 							<div class="features">
 								Play a <b>Freeciv-web One Turn per Day</b>, where up to 300 human <br>players play one turn every day:
 							</div>
-						</c:if>
+						</c:if>-->
 
 					</div>
 				</div>
@@ -279,104 +274,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-6 container" id="best-of-play-by-email">
-				<div class="panel-freeciv">
-				    <a href="/hall_of_fame"><h2>Hall Of Fame</h2></a>
-				    See the <a href="/hall_of_fame">Hall Of Fame</a>, where the best scores of single-player games are listed!<br>
-				    <br>
-					<h3><fmt:message key="index-best-of-play-by-email"/></h3>
-					<table class="table">
-						<thead>
-							<tr>
-								<th>Rank</th>
-								<th>Player</th>
-								<th>Wins</th>
-							</tr>
-						</thead>
-						<tbody id="play-by-email-list">
-							<!-- 
-								loaded dynamically
-							-->
-						</tbody>
-					</table>
-				</div>
-			</div>
 		</div> <!-- end multiplayer/best play by email -->
-
-
-                <div class="row">
-                        <div class="col-md-12">
-                                <h2><fmt:message key="index-youtube"/></h2>
-                        </div>
-                </div>
-                <div class="row">
-                        <div class="col-md-6">
-                                <div class="videoWrapper">
-                                        <iframe class="embed-responsive-item" width="542" height="343" src="https://www.youtube.com/embed/eNuercg7Jko" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                        </div>
-                       <div class="col-md-6">
-                                <div class="videoWrapper">
-                                        <iframe class="embed-responsive-item" width="542" height="343" src="https://www.youtube.com/embed/jZsq9SADdQk" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                        </div>
-
-
-</div> <!-- end youtube -->
-
-
-		<div class="row">
-			<div class="col-md-12">
-				<h2><fmt:message key="index-press"/></h2>
-				<div class="well">
-					<h4><i><fmt:message key="index-press-pc-gamer-title"/></i></h4>
-					<i><fmt:message key="index-press-pc-gamer-content"/></i>
-					<br>
-					<a href="http://www.pcgamer.com/freeciv-available-in-html5-browsers-worldwide-productivity-plummets/" target="new"><img style="display: block; float: right;" src="images/pcgamer.gif" alt="PC Gamer"></a>
-					<br>
-				</div>
-			</div>
-		</div> <!-- end press -->
-		
-		<c:if test="${default_lang}">
-			<div class="row">
-				<div class="col-md-12">
-					<h2><fmt:message key="index-developers"/></h2>
-				</div>
-			</div> 
-			<div class="row">
-				<div class="col-md-4">
-					<div class="panel-freeciv">
-						<h4><fmt:message key="index-contributing"/></h4>
-						Freeciv is open source software released under the GNU General Public License.
-						<a href="https://github.com/freeciv/freeciv-web"><fmt:message key="index-developers"/></a> and <a href="https://github.com/freeciv/freeciv-web/wiki/Contributing-Blender-models-for-Freeciv-WebGL"><fmt:message key="index-3d-artists"/></a> are welcome to join development.
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="panel-freeciv">
-						<h4><fmt:message key="index-stack"/></h4>
-						<img class="small" src="/static/images/webgl-stack.png">WebGL
-						<img class="small" src="/static/images/html5-stack.png">HTML5<br>
-						<img class="small" src="/static/images/tomcat-stack.png">Tomcat
-						<img class="small" src="/static/images/python-stack.png">Python<br>
-						<img class="small" src="/static/images/three-stack.png">Three.js
-						<img class="small" src="/static/images/blender-stack.png">Blender
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="panel-freeciv">
-						<h4><fmt:message key="index-credits"/></h4>
-						<ul>
-							<li>Andreas R&oslash;sdal <i class="fa fa-twitter"></i>  <a href="https://twitter.com/andreasrosdal/">@andreasrosdal</a></li>
-							<li>Sveinung Kvilhaugsvik <i class="fa fa-github"></i>  <a href="https://github.com/kvilhaugsvik">@kvilhaugsvik</a></li>
-							<li>Marko Lindqvist <i class="fa fa-github"></i>  <a href="https://github.com/cazfi">@cazfi</a></li>
-							<li><a href="http://freeciv.wikia.com/wiki/People">Full list</a></li>
-						</ul>
-						
-					</div>
-				</div>
-			</div> <!-- end developers -->
-		</c:if>
 
 
 		<%@include file="/WEB-INF/jsp/fragments/footer.jsp"%>

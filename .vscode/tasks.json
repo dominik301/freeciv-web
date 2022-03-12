@@ -9,6 +9,10 @@
             "command": "./build.sh",
             "options": {
                 "cwd" : "${workspaceFolder}/freeciv-web"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
             }
         },
         {

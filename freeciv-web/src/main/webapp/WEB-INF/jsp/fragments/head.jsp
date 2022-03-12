@@ -16,7 +16,7 @@
 <title>${empty title ? "Freeciv-web - open source turn-based strategy game" : title}</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="author" content="The Freeciv project">
+<meta name="author" content="Dominik Hüsener, The Freeciv project">
 <meta name="description" content="Play Freeciv online with 2d HTML5 or 3D WebGL in the browser. Freeciv is a Free and Open Source empire-building strategy game made with 2D HTML5 or 3D WebGL mode, which you can play in your browser, tablet or mobile device!">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property="og:image" content="/static/images/frontpage-jumbotron-alt.png" />
@@ -30,7 +30,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Open+Sans:400,400i,700,700i" rel="stylesheet">
 
-<link rel="manifest" href="/static/manifest.json">
+<link rel="manifest" href="/static/manifest.webmanifest">
 
 <% if (gaTrackingId != null) { %>
 <script>

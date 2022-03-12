@@ -1,6 +1,10 @@
 # Ignore everything
-*
+#*
+images
+sounds
+tileset
+docs
 
 # ...Except these
-!README.md
-!.gitignore
+#!README.md
+#!.gitignore

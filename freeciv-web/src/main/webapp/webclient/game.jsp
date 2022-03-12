@@ -9,7 +9,7 @@
 				<li id="civ_tab"><a href="#tabs-civ"><i class="fa fa-university" aria-hidden="true"></i> Regierung</a></li>
 				<li id="tech_tab"><a id="tech_tab_item" href="#tabs-tec"><i class="fa fa-flask" aria-hidden="true"></i> Forschung</a></li>
 				<li id="players_tab"><a href="#tabs-nat"><i class="fa fa-flag" aria-hidden="true"></i> Nationen</a></li>
-				<li id="cities_tab"><a href="#tabs-cities"><i class="fa fa-fort-awesome" aria-hidden="true"></i> Städte</a></li>
+				<li id="cities_tab"><a href="#tabs-cities"><i class="fa fa-fort-awesome" aria-hidden="true"></i> St&auml;dte</a></li>
 				<li id="opt_tab"><a href="#tabs-opt"><i class="fa fa-cogs" aria-hidden="true"></i> Einstellungen</a></li>
 				<li id="hel_tab"><a href="#tabs-hel"><i class="fa fa-question-circle-o" aria-hidden="true"></i> Anleitung</a></li>
 

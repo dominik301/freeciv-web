@@ -1344,7 +1344,8 @@ function handle_ruleset_nation_groups(packet)
 /* 100% complete */
 function handle_ruleset_nation(packet)
 {
-  nations[packet['id']] = packet;
+  if (packet['translation_domain'] == "")
+    nations[packet['id']] = packet;
 }
 
 function handle_ruleset_city(packet)

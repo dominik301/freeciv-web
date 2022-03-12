@@ -297,7 +297,7 @@ function pick_nation(player_id)
 			width: is_small_screen() ? "99%" : "70%",
             height: $(window).height() - 100,
 			buttons: {
-				"Play this nation!": function() {
+				"Spiele diese Nation!": function() {
 					$("#pick_nation_dialog").dialog('close');
 					submit_nation_choice();
 				}
@@ -312,10 +312,11 @@ function pick_nation(player_id)
       close: function (event, ui) { update_nation_selection(); }
   });
 
+  $("#nation_style_choices").hide();
+
   if (is_small_screen()) {
     $("#select_nation_flag").hide();
     $("#nation_legend").hide();
-    $("#nation_style_choices").hide();
     $("#nation_list").width("80%");
   }
 
@@ -983,7 +984,7 @@ function pregame_settings()
 function change_ruleset(to) {
     send_message("/rulesetdir " + to);
     // reset some ruleset defined settings.
-    send_message("/set nationset all");
+    send_message("/set nationset core");
     if (chosen_nation != -1) {
       swal("Ruleset changed. You need to select your nation again.");
     }

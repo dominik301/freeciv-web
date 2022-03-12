@@ -239,12 +239,12 @@ function show_new_game_message()
 
     } else {
       message = player_nation_text + " Deine\n" +
-      "Aufgabe ist es, ein großartiges Reich zu schaffen! Du \n" +
-      "solltest zünachst mit dem Entdecker das Umland erkunden,\n" +
-      "und mti deinen Siedelern einen guten Platz für eine Stadt\n" +
+      "Aufgabe ist es, ein gro&szlig;artiges Reich zu schaffen! Du \n" +
+      "solltest zun&auml;chst mit dem Entdecker das Umland erkunden,\n" +
+      "und mit deinen Siedlern einen guten Platz f&uuml;r eine Stadt\n" +
       "finden. Rechts-klicke mit der Maus auf deine Einheiten um eine Liste mit\n" +
-      "möglichen Aufträgen wie bewegen, erkunden, Städte bauen und angreifen anzuzeigen. \n" +
-      "Viel Erfolg,und hab eine Menge Spaß!";
+      "m&ouml;glichen Auftr&auml;gen wie bewegen, erkunden, St&auml;dte bauen und angreifen anzuzeigen. \n" +
+      "Viel Erfolg,und hab eine Menge Spa&szlig;!";
 
     }
   } else if (game_loaded) {

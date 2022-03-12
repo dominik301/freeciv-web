@@ -1118,7 +1118,7 @@ function update_unit_order_commands()
     if (utype_can_do_action(ptype, ACTION_FOUND_CITY)
         && pcity == null) {
       $("#order_build_city").show();
-      unit_actions["build"] = {name: "Build city (B)"};
+      unit_actions["build"] = {name: "Stadt bauen (B)"};
     } else if (utype_can_do_action(ptype, ACTION_JOIN_CITY)
                && pcity != null) {
       $("#order_build_city").show();
@@ -1128,13 +1128,13 @@ function update_unit_order_commands()
     }
 
     if (ptype['name'] == "Explorer") {
-      unit_actions["explore"] = {name: "Auto explore (X)"};
+      unit_actions["explore"] = {name: "Auto erkunden (X)"};
     }
 
   }
 
   unit_actions = $.extend(unit_actions, {
-                   "goto": {name: "Unit goto (G)"},
+                   "goto": {name: "Einheit bewegen (G)"},
 	               "tile_info": {name: "Tile info"}
                  });
 
@@ -1156,14 +1156,14 @@ function update_unit_order_commands()
         $("#order_road").show();
         $("#order_railroad").hide();
         if (!(tile_has_extra(ptile, EXTRA_RIVER) && player_invention_state(client.conn.playing, tech_id_by_name('Bridge Building')) == TECH_UNKNOWN)) {
-	      unit_actions["road"] = {name: "Build road (R)"};
+	      unit_actions["road"] = {name: "Stra&szlig;e bauen (R)"};
 	    }
       } else if (player_invention_state(client.conn.playing, tech_id_by_name('Railroad')) == TECH_KNOWN
                  && tile_has_extra(ptile, EXTRA_ROAD)
                && !tile_has_extra(ptile, EXTRA_RAIL)) {
         $("#order_road").hide();
         $("#order_railroad").show();
-	    unit_actions['railroad'] = {name: "Build railroad (R)"};
+	    unit_actions['railroad'] = {name: "Eisenbahn bauen (R)"};
       } else {
         $("#order_road").hide();
         $("#order_railroad").hide();
@@ -1185,12 +1185,12 @@ function update_unit_order_commands()
       }
 
       if (tile_has_extra(ptile, EXTRA_FALLOUT)) {
-        unit_actions["fallout"] = {name: "Remove fallout (N)"};
+        unit_actions["fallout"] = {name: "Fallout entfernen (N)"};
       }
 
       if (tile_has_extra(ptile, EXTRA_POLLUTION)) {
         $("#order_pollution").show();
-	unit_actions["pollution"] = {name: "Remove pollution (P)"};
+	unit_actions["pollution"] = {name: "Verschmutzung entfernen (P)"};
       } else {
         $("#order_pollution").hide();
       }
@@ -1205,7 +1205,7 @@ function update_unit_order_commands()
         if (!tile_has_extra(ptile, EXTRA_IRRIGATION)) {
           $("#order_irrigate").show();
           $("#order_build_farmland").hide();
-          unit_actions["irrigation"] = {name: "Irrigation (I)"};
+          unit_actions["irrigation"] = {name: "Bew&auml;sserung (I)"};
         } else if (!tile_has_extra(ptile, EXTRA_FARMLAND) && player_invention_state(client.conn.playing, tech_id_by_name('Refrigeration')) == TECH_KNOWN) {
           $("#order_build_farmland").show();
           $("#order_irrigate").hide();

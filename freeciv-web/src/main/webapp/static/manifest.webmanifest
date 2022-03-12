@@ -2,9 +2,10 @@
   "name": "Freeciv-web",
   "short_name": "Freeciv-web",
   "start_url": ".",
+  "id": "/static/",
   "display": "fullscreen",
   "background_color": "#fff",
-  "description": "Freeciv is a Free and Open Source empire-building strategy game inspired by the history of human civilization.",
+  "description": "Freeciv ist ein freies und quelloffenes empire-building Strategiespiel inspiriert von der Geschichte menschlicher Zivilisation.",
   "icons": [{
     "src": "/static/images/apple-touch-icon.png",
     "sizes": "150x157",

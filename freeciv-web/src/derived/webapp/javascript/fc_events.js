@@ -310,7 +310,7 @@ var fc_e_events = [
   ["e_disaster", E_S_CITY, "Disaster"],
   ["e_achievement", E_S_NATION, "Achievements"],
   ["e_tech_lost", E_S_ADVANCE, "Technologie verloren"],
-  ["e_tech_embassy", E_S_ADVANCE, "anderer Spieler hat eine Technologie erhalten/verloren],
+  ["e_tech_embassy", E_S_ADVANCE, "anderer Spieler hat eine Technologie erhalten/verloren"],
   ["e_my_spy_steal_gold", E_S_D_ME, "Gold Diebstahl"],
   ["e_enemy_spy_steal_gold", E_S_D_THEM, "Gold Diebstahl"],
   ["e_spontaneous_extra", E_S_XYZZY, "Extra Appears or Disappears"],

@@ -108,8 +108,8 @@ button {
   overflow: hidden;
   padding-right: 12px;
   display: inline-block;
-  height: 30px;
-  width: 30px;
+  height: 3em;
+  width: 3em;
 }
 
 #turn_done_button_div {

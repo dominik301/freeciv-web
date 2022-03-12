@@ -1,6 +1,5 @@
-const cacheName = 'freeciv-v1';
+const cacheName = 'freeciv-v2';
 const appShellFiles = [
-    'static/'
 ];
 
 self.addEventListener('install', (e) => {

@@ -16,7 +16,6 @@
  var packet_city_refresh = 42
  var packet_city_name_suggestion_req = 43
  var packet_city_rally_point = 138
- var packet_city_manager = 139
  var packet_worker_task = 241
  var packet_player_phase_done = 52
  var packet_player_rates = 53
@@ -48,6 +47,7 @@
  var packet_spaceship_launch = 135
  var packet_spaceship_place = 136
  var packet_single_want_hack_req = 160
+ var packet_ruleset_select = 171
  var packet_save_scenario = 181
  var packet_vote_submit = 189
  var packet_edit_mode = 190

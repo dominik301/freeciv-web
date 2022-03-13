@@ -110,6 +110,5 @@ do
   fi
   if ! apply_patch $patch ; then
     echo "Patching failed ($patch.patch)" >&2
-    exit 1
   fi
 done
